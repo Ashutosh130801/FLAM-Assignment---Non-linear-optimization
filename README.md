@@ -36,10 +36,10 @@ u(t) = t,  v(t) = e^{M|t|} \sin(0.3t)
 
 2️⃣ Rotate it by an angle θ
 
-
+$$
 x_{rot} = u \cos(\theta) - v \sin(\theta) \\
 y_{rot} = u \sin(\theta) + v \cos(\theta)
-
+$$
 
 3️⃣ Translate by (X, 42)
 
