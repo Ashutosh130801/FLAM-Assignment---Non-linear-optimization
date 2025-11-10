@@ -92,11 +92,13 @@ We create a function that:
 1.  Takes guesses of **θ**, **M**, and **X**.
 2.  Converts all (x, y) points into (u, v) using the above inverse transformation.
 3.  Calculates predicted values:
+   
     $$
     v_{pred} = e^{M|u|} \sin(0.3u)
     $$
-4.  Computes the error (difference between $v$ and $v_{pred}$).
-5.  Returns the Mean Squared Error (MSE).
+    
+5.  Computes the error (difference between $v$ and $v_{pred}$).
+6.  Returns the Mean Squared Error (MSE).
 
 The optimization goal is to **minimize this MSE**.
 
