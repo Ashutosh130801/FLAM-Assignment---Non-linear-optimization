@@ -31,19 +31,22 @@ At first glance, these equations look complex. But they are actually just a 2D r
 
 1️⃣ Base curve (in simple coordinates)
 We start with:
+$$
 u(t) = t,  v(t) = e^{M|t|} \sin(0.3t)
-
+$$
 
 2️⃣ Rotate it by an angle θ
 
 $$
 x_{rot} = u \cos(\theta) - v \sin(\theta) \\
+$$
 y_{rot} = u \sin(\theta) + v \cos(\theta)
 $$
 
 3️⃣ Translate by (X, 42)
-
-x = x_{rot} + X,  y = y_{rot} + 42
+$$
+x = x_{rot} + X,  // y = y_{rot} + 42
+$$
 
 So the complicated equations are just a rotation + translation of this base shape.
 
@@ -58,13 +61,13 @@ x' = x - X,  y' = y - 42
 
 
 Un-rotate:
-
+$$
 u = x' \cos(\theta) + y' \sin(\theta), v = -x' \sin(\theta) + y' \cos(\theta)
-
+$$
 For the correct parameters, these (u, v) points should satisfy:
-
+$$
 v = e^{M|u|} \sin(0.3u)
-
+$$
 If our guessed parameters (θ, M, X) are correct, the difference between v and e^{M|u|} \sin(0.3u)$ will be very small.
 
 
