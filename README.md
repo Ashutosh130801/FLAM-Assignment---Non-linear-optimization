@@ -68,12 +68,14 @@ x' = x - X,  y' = y - 42
 
 
 Un-rotate:
+
 $$
 \begin{cases}
-u = x' \cos(\theta) + y' \sin(\theta)\\
+u = x' \cos(\theta) + y' \sin(\theta) \\
 v = -x' \sin(\theta) + y' \cos(\theta)
 \end{cases}
 $$
+
 For the correct parameters, these (u, v) points should satisfy:
 $$
 v = e^{M|u|} \sin(0.3u)
