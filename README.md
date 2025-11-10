@@ -32,15 +32,17 @@ At first glance, these equations look complex. But they are actually just a 2D r
 1️⃣ Base curve (in simple coordinates)
 We start with:
 $$
-u(t) = t,  v(t) = e^{M|t|} \sin(0.3t)
+u(t) = t,//
+v(t) = e^{M|t|} \sin(0.3t)
 $$
 
 2️⃣ Rotate it by an angle θ
 
 $$
+\begin{cases}
 x_{rot} = u \cos(\theta) - v \sin(\theta) \\
-$$
 y_{rot} = u \sin(\theta) + v \cos(\theta)
+\end{cases}
 $$
 
 3️⃣ Translate by (X, 42)
