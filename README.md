@@ -94,8 +94,6 @@ We create a function that:
 2.  Converts all (x, y) points into (u, v) using the above inverse transformation.
 3.  Calculates predicted values:
    
-
-    \begin{cases}
     v_{pred} = e^{M|u|} \sin(0.3u)
     
 5.  Computes the error (difference between $v$ and $v_{pred}$).
