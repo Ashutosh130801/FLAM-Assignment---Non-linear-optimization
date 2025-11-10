@@ -80,7 +80,7 @@ $$
 For the correct parameters, these (u, v) points should satisfy:
 $$
 \begin{cases}
-v = e^{M|u|} \sin(0.3u)
+v = e^{M|u|} \sin(0.3u)\\
 \end{cases}
 $$
 If our guessed parameters (θ, M, X) are correct, the difference between v and e^{M|u|} \sin(0.3u)$ will be very small.
