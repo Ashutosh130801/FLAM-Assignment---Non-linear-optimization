@@ -30,9 +30,10 @@ At first glance, these equations look complex. But they are actually just a 2D r
 
 1️⃣ Base curve (in simple coordinates)
 We start with:
+
 $$
 \begin{cases}
-u(t) = t //
+u(t) = t \\
 v(t) = e^{M|t|} \sin(0.3t)
 \end{cases}
 $$
@@ -47,9 +48,10 @@ y_{rot} = u \sin(\theta) + v \cos(\theta)
 $$
 
 3️⃣ Translate by (X, 42)
+
 $$
 \begin{cases}
-x = x_{rot} + X,  // y = y_{rot} + 42
+x = x_{rot} + X, \\ y = y_{rot} + 42
 \end{cases}
 $$
 
@@ -68,7 +70,7 @@ x' = x - X,  y' = y - 42
 Un-rotate:
 $$
 \begin{cases}
-u = x' \cos(\theta) + y' \sin(\theta)// 
+u = x' \cos(\theta) + y' \sin(\theta)\\
 v = -x' \sin(\theta) + y' \cos(\theta)
 \end{cases}
 $$
