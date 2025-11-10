@@ -2,7 +2,7 @@
 # 🧠 Non-Linear Parameter Estimation for Rotated and Translated Curve
 
 ---
- 📘 Problem Overview
+ ## 📘 Problem Overview
 
 We are given a large set of 2D data points (x, y) that follow a complex, non-linear pattern described by the equations:
 
@@ -31,10 +31,10 @@ At first glance, these equations look complex. But they are actually just a 2D r
 1️⃣ Base curve (in simple coordinates)
 We start with:
 $$
-u(t) = t
-$$
-$$
+\begin{cases}
+u(t) = t //
 v(t) = e^{M|t|} \sin(0.3t)
+\end{cases}
 $$
 
 2️⃣ Rotate it by an angle θ
@@ -48,7 +48,9 @@ $$
 
 3️⃣ Translate by (X, 42)
 $$
+\begin{cases}
 x = x_{rot} + X,  // y = y_{rot} + 42
+\end{cases}
 $$
 
 So the complicated equations are just a rotation + translation of this base shape.
@@ -65,7 +67,10 @@ x' = x - X,  y' = y - 42
 
 Un-rotate:
 $$
-u = x' \cos(\theta) + y' \sin(\theta), v = -x' \sin(\theta) + y' \cos(\theta)
+\begin{cases}
+u = x' \cos(\theta) + y' \sin(\theta)// 
+v = -x' \sin(\theta) + y' \cos(\theta)
+\end{cases}
 $$
 For the correct parameters, these (u, v) points should satisfy:
 $$
