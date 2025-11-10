@@ -78,12 +78,10 @@ v = -x' \sin(\theta) + y' \cos(\theta)
 $$
 
 For the correct parameters, these (u, v) points should satisfy:
-$$
-\begin{cases}
-v = e^{M|u|} \sin(0.3u)\\
-\end{cases}
-$$
-If our guessed parameters (θ, M, X) are correct, the difference between v and e^{M|u|} \sin(0.3u)$ will be very small.
+
+v = e^{M|u|} sin(0.3u)
+
+If our guessed parameters (θ, M, X) are correct, the difference between v and e^{M|u|} sin(0.3u) will be very small.
 
 
 
@@ -96,11 +94,9 @@ We create a function that:
 2.  Converts all (x, y) points into (u, v) using the above inverse transformation.
 3.  Calculates predicted values:
    
-    $$
+
     \begin{cases}
     v_{pred} = e^{M|u|} \sin(0.3u)
-    \end{cases}
-    $$
     
 5.  Computes the error (difference between $v$ and $v_{pred}$).
 6.  Returns the Mean Squared Error (MSE).
