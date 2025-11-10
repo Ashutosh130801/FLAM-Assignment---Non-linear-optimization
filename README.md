@@ -2,8 +2,7 @@
 # 🧠 Non-Linear Parameter Estimation for Rotated and Translated Curve
 
 ---
-
-## 📘 Problem Overview
+ 📘 Problem Overview
 
 We are given a large set of 2D data points (x, y) that follow a complex, non-linear pattern described by the equations:
 
@@ -32,7 +31,9 @@ At first glance, these equations look complex. But they are actually just a 2D r
 1️⃣ Base curve (in simple coordinates)
 We start with:
 $$
-u(t) = t,//
+u(t) = t
+$$
+$$
 v(t) = e^{M|t|} \sin(0.3t)
 $$
 
