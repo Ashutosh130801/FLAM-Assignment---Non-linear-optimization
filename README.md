@@ -32,7 +32,9 @@ At first glance, these equations look complex. But they are actually just a 2D r
 **1️⃣ Base curve (in simple coordinates)**
 We start with:
 $$
+\begin{cases}
 u(t) = t, \quad v(t) = e^{M|t|} \sin(0.3t)
+\end{cases}
 $$
 
 **2️⃣ Rotate it by an angle θ**
@@ -45,7 +47,9 @@ $$
 
 **3️⃣ Translate by (X, 42)**
 $$
+\begin{cases}
 x = x_{rot} + X, \quad y = y_{rot} + 42
+\end{cases}
 $$
 
 So the complicated equations are just a rotation + translation of this base shape.
